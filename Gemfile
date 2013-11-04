@@ -33,9 +33,6 @@ group :development, :test do
 
   gem 'capybara'
   gem 'poltergeist'
-  gem 'site_prism'
-
-  gem 'database_cleaner'
 
   gem 'better_errors'
   gem 'binding_of_caller'
