@@ -1,0 +1,15 @@
+.container {
+  @include outer-container;
+}
+
+.header {
+  height: 60px;
+
+  .logo {
+    float: left;
+  }
+
+  .navigation {
+    float: right;
+  }
+}

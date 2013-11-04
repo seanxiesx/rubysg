@@ -1,0 +1,57 @@
+.header {
+  background: $background-red;
+  box-shadow: 0 0 5px 3px hsla(0, 0%, 0%, 0.35);
+
+  .logo {
+    padding: 0.4em 0;
+
+    .logo-image {
+      height: 47px;
+      width : 202px;
+      @include hide-text;
+
+      background: asset-url("logo.png") 0 0 no-repeat;
+    }
+  }
+
+  .page-links,
+  .social-media-links {
+    display: block;
+    float  : left;
+    height : 60px;
+
+    list-style: none;
+    margin : 0;
+    padding: 0 1em;
+  }
+
+  .page-links {
+    .page-link {
+      display: inline-block;
+      margin: 0 1em;
+
+      line-height: 60px;
+    }
+  }
+
+  .social-media-links {
+    background: $background-green;
+
+    .social-media-link {
+      display: inline-block;
+      margin: 0 1em;
+
+      padding: 0.5em 0;
+    }
+
+    .social-media-icon {
+      height: 39px;
+      width : 39px;
+      @include hide-text;
+
+      &.google-group { background: asset-url("social_google_group.png") 0 0 no-repeat; }
+      &.facebook     { background: asset-url("social_facebook.png") 0 0 no-repeat;     }
+      &.meetup       { background: asset-url("social_meetup.png") 0 0 no-repeat;       }
+    }
+  }
+}

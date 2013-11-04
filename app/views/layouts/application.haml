@@ -10,9 +10,22 @@
     .header
       .container
         .logo
-          %h1 RubySG
+          = link_to "RubySG", "/", class: "logo-image"
         .navigation
-          .page
-          .social-media
+          %ul.page-links
+            %li.page-link= link_to "Events"    , "#", class: "white"
+            %li.page-link= link_to "Rubyists"  , "#", class: "white"
+            %li.page-link= link_to "Resources" , "#", class: "white"
+          %ul.social-media-links
+            %li.social-media-link
+              = link_to "Meetup"       , "http://www.meetup.com/Singapore-Ruby-Group/",
+                target: "_blank", class: "social-media-icon meetup"
+            %li.social-media-link
+              = link_to "Google Group" , "https://groups.google.com/forum/?fromgroups#!forum/singapore-rb",
+                target: "_blank", class: "social-media-icon google-group"
+            %li.social-media-link
+              = link_to "Facebook"     , "https://www.facebook.com/groups/singaporerubybrigade/",
+                target: "_blank", class: "social-media-icon facebook"
+
     .content
       = yield

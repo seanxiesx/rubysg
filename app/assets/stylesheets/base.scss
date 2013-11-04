@@ -1,0 +1,39 @@
+/* Colors */
+$text-black        : #2b2b2b;
+$text-white        : #ffffff;
+
+$background-red    : #e1383f;
+$background-orange : #fbb040;
+$background-green  : #61c5c2;
+
+$button  : #00a79d;
+
+/* Mixins */
+@mixin hide-text {
+  display: block;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Base Styles */
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  @include transition (all 0.4s ease-in-out);
+}
+
+a.white {
+  color: $text-white;
+}
+
+a.white:hover {
+  text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.5);
+}
