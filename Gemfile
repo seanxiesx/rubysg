@@ -15,6 +15,7 @@ gem 'sass-rails'
 gem 'jquery-rails'
 gem 'coffee-rails'
 gem 'uglifier'
+gem 'turbolinks'
 
 gem 'bourbon'
 gem 'neat'
