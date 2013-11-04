@@ -4,6 +4,6 @@ feature "RubySG Home Page" do
   scenario "user can see events" do
     visit root_path
 
-    page.should have_selector("h1", text: "RubySG")
+    page.should have_selector(".logo", text: "RubySG")
   end
 end
