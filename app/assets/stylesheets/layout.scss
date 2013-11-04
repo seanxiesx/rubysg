@@ -13,3 +13,49 @@
     float: right;
   }
 }
+
+.content {
+  margin-top: 0.5em;
+}
+
+.events {
+  margin-bottom: 2em;
+
+  .event {
+    @include span-columns(10);
+    @include shift(1);
+
+    .title {
+      @include span-columns(3 of 10);
+    }
+    .when {
+      @include span-columns(3 of 10);
+    }
+    .where {
+      @include span-columns(2 of 10);
+    }
+    .details {
+      @include span-columns(1 of 10);
+    }
+    .rsvp {
+      @include span-columns(1 of 10);
+    }
+  }
+}
+
+.introduction {
+  margin-bottom: 2em;
+
+  .logo {
+    @include span-columns(12);
+  }
+
+  .what {
+    @include span-columns(5);
+    @include shift(1);
+  }
+
+  .help {
+    @include span-columns(5);
+  }
+}

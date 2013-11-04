@@ -1,6 +1,8 @@
 /* Colors */
 $text-black        : #2b2b2b;
 $text-white        : #ffffff;
+$link              : #61c5c2;
+$link-hover        : #00a79d;
 
 $background-red    : #e1383f;
 $background-orange : #fbb040;
@@ -26,11 +28,28 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+
+  font-size  : 1.4em;
+  font-weight: normal;
+}
+
+p {
+  line-height   : 1.5em;
+
+  font-size     : 1em;
+  font-weight   : 200;
+  letter-spacing: 0.5px;
+}
+
 a {
+  color: $link;
   text-decoration: none;
 }
 
 a:hover {
+  color: $link-hover;
   @include transition (all 0.4s ease-in-out);
 }
 

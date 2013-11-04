@@ -1,0 +1,17 @@
+.events {
+  .event {
+    border-bottom: 1px dashed $background-red;
+
+    &:hover {
+      background: lighten($background-red, 40%);
+    }
+  }
+
+  .title,
+  .when,
+  .where,
+  .details,
+  .rsvp {
+    padding: 0.4em;
+  }
+}
