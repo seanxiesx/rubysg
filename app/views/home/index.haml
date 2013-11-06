@@ -1,5 +1,15 @@
-.events
+.events.next
   .container
+    %h3 Upcoming Event
+    .event
+      .title November Meetup
+      .when  Nov 19, 2013 - 7:00pm
+      .where Silicon Straits
+      .rsvp= link_to "RSVP", "#"
+
+.events.past
+  .container
+    %h3 Past Events
     - @events.each do |event|
       .event{"data-test" => "event"}
         .title{"data-test" => "event-title"}= event.title
@@ -7,10 +17,8 @@
           = format_when(event.from, event.to)
         .where
           = event.venue
-        .details
-          = link_to "Details", "#"
-        .rsvp
-          = link_to "RSVP"   , event.rsvp_link, target: "_blank"
+        .slides
+          = link_to "Slides", "#"
 
 .introduction
   .container

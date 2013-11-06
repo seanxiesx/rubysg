@@ -1,4 +1,32 @@
-.events {
+.events.next {
+  .event {
+
+  }
+
+  .title {
+    font-size: 4em;
+    font-weight: 200;
+  }
+
+  .when {
+    font-size: 1.5em;
+    //font-weight: 500;
+    font-style: italic;
+  }
+
+
+  .where {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .rsvp {
+    @include button;
+    a { color: white; }
+  }
+}
+
+.events.past {
   .event {
     border-bottom: 1px dashed $background-red;
 
@@ -10,11 +38,14 @@
   .title,
   .when,
   .where,
-  .details,
-  .rsvp {
+  .slides {
     padding: 0.4em;
 
     font-size  : 0.95em;
     font-weight: 200;
+  }
+
+  .slides {
+    text-align: right;
   }
 }

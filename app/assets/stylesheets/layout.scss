@@ -18,27 +18,29 @@
   margin-top: 0.5em;
 }
 
-.events {
+.events.next {
+  .event {
+    @include span-columns(12);
+  }
+}
+
+.events.past {
   margin: 2em 0;
 
   .event {
-    @include span-columns(10);
-    @include shift(1);
+    @include span-columns(12);
 
     .title {
-      @include span-columns(3 of 10);
+      @include span-columns(4 of 12);
     }
     .when {
-      @include span-columns(3 of 10);
+      @include span-columns(4 of 12);
     }
     .where {
-      @include span-columns(2 of 10);
+      @include span-columns(3 of 12);
     }
-    .details {
-      @include span-columns(1 of 10);
-    }
-    .rsvp {
-      @include span-columns(1 of 10);
+    .slides {
+      @include span-columns(1 of 12);
     }
   }
 }
