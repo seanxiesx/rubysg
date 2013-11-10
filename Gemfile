@@ -17,10 +17,14 @@ gem 'coffee-rails'
 gem 'uglifier'
 gem 'turbolinks'
 
+gem 'httparty'
+
 gem 'bourbon'
 gem 'neat'
 
 group :development, :test do
+  gem 'dotenv-rails'
+
   gem 'spring'
   gem 'guard'
   gem 'guard-bundler'
@@ -35,6 +39,8 @@ group :development, :test do
 
   gem 'capybara'
   gem 'poltergeist'
+
+  gem 'vcr'
 
   gem 'better_errors'
   gem 'binding_of_caller'
