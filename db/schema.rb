@@ -17,14 +17,19 @@ ActiveRecord::Schema.define(version: 20131104113301) do
   enable_extension "plpgsql"
 
   create_table "events", force: true do |t|
-    t.string   "title"
+    t.string   "name"
     t.text     "description"
-    t.datetime "from"
-    t.datetime "to"
-    t.string   "venue"
-    t.string   "rsvp_link"
+    t.text     "event_url"
+    t.datetime "time"
+    t.string   "venue_name"
+    t.string   "venue_address"
+    t.float    "venue_lat"
+    t.float    "venue_lon"
+    t.integer  "meetup_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "events", ["meetup_id"], name: "index_events_on_meetup_id", using: :btree
 
 end
