@@ -4,22 +4,24 @@ class Meetup
 
   GROUP_ID = 3952812
 
-  def events(options)
-    response = self.class.get( "/2/events", query: required_options.merge!(options) )
-    response["results"]
-  end
+  class << self
+    def upcoming_events
+      events(status: "upcoming")
+    end
 
-  def upcoming_events
-    events(status: "upcoming", page: 20)
-  end
+    def historic_events
+      events(status: "past")
+    end
 
-  def past_events
-    events(status: "past", page: 20)
-  end
+    private
 
-  private
+    def required_options
+      { sign: "true", key: ENV["MEETUP_API_KEY"], group_id: GROUP_ID, page: 5, desc: "desc", fields: "event_hosts" }
+    end
 
-  def required_options
-    { sign: "true", key: ENV["MEETUP_API_KEY"], group_id: GROUP_ID }
+    def events(options)
+      response = self.get( "/2/events", query: required_options.merge!(options) )
+      response["results"]
+    end
   end
 end
