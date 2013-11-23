@@ -8,7 +8,7 @@ feature "RubySG Home Page" do
 
     page.should have_selector("[data-test=event]", count: 2)
     events.each do |event|
-      page.should have_selector("[data-test=event-title]", text: event.title)
+      page.should have_selector("[data-test=event-name]", text: event.name)
     end
   end
 end

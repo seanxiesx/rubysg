@@ -12,11 +12,11 @@
     %h3 Past Events
     - @events.each do |event|
       .event{"data-test" => "event"}
-        .title{"data-test" => "event-title"}= event.title
+        .title{"data-test" => "event-name"}= event.name
         .when
-          = format_when(event.from, event.to)
+          = event.time.strftime("%b %-e, %-l:%M%P")
         .where
-          = event.venue
+          = event.venue_name
         .slides
           = link_to "Slides", "#"
 
