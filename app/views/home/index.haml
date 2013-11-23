@@ -1,24 +1,30 @@
-.events.next
+.events.upcoming
   .container
-    %h3 Upcoming Event
-    .event
-      .title November Meetup
-      .when  Nov 19, 2013 - 7:00pm
-      .where Silicon Straits
-      .rsvp= link_to "RSVP", "#"
+    - @upcoming_events.each do |event|
+      .event{"data-test" => "upcoming-event"}
+        .name{"data-test" => "upcoming-event-name"}
+          = event.name
+        .details
+          .time
+            = event.time.strftime("%B %e - %-l:%M%P")
+          .venue
+            .venue_name= event.venue_name
+            .venue_address= event.venue_address
+          .rsvp
+            = link_to "RSVP", event.event_url
 
-.events.past
+.events.historic
   .container
-    %h3 Past Events
-    - @events.each do |event|
-      .event{"data-test" => "event"}
-        .title{"data-test" => "event-name"}= event.name
-        .when
-          = event.time.strftime("%b %-e, %-l:%M%P")
-        .where
+    - @historic_events.each do |event|
+      .event{"data-test" => "historic-event"}
+        .name{"data-test" => "historic-event-name"}
+          = event.name
+        .time
+          = event.time.strftime("%d %b %Y - %I:%M%P")
+        .venue
           = event.venue_name
-        .slides
-          = link_to "Slides", "#"
+        .details
+          = link_to "Details & Slides", "#"
 
 .introduction
   .container

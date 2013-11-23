@@ -18,29 +18,43 @@
   margin-top: 0.5em;
 }
 
-.events.next {
+.events.upcoming {
   .event {
     @include span-columns(12);
+
+    .name {
+      @include span-columns(6 of 12);
+      @include shift(1);
+    }
+
+    .details {
+      @include span-columns(4 of 12);
+    }
+
+    .rsvp {
+      @include span-columns(2 of 4);
+      @include shift(1);
+    }
   }
 }
 
-.events.past {
+.events.historic {
   margin: 2em 0;
 
   .event {
     @include span-columns(12);
 
-    .title {
-      @include span-columns(4 of 12);
-    }
-    .when {
-      @include span-columns(4 of 12);
-    }
-    .where {
+    .name {
       @include span-columns(3 of 12);
     }
-    .slides {
-      @include span-columns(1 of 12);
+    .time {
+      @include span-columns(3 of 12);
+    }
+    .venue {
+      @include span-columns(3 of 12);
+    }
+    .details {
+      @include span-columns(3 of 12);
     }
   }
 }
