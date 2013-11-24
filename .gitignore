@@ -18,4 +18,4 @@
 # Rubymine
 .idea
 
-.env
+.env.production
