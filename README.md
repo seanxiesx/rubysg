@@ -1,6 +1,6 @@
 # ruby.sg
 
-[![Code Climate](https://codeclimate.com/github/rubysg/rubysg.png)](https://codeclimate.com/github/rubysg/rubysg)
+[![Build Status](https://travis-ci.org/rubysg/rubysg.png?branch=master)](https://travis-ci.org/rubysg/rubysg) [![Code Climate](https://codeclimate.com/github/rubysg/rubysg.png)](https://codeclimate.com/github/rubysg/rubysg)
 
 This is the app for [ruby.sg](http://ruby.sg) - a community site for the Singapore Ruby Community!
 
