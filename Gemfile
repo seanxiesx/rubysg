@@ -22,6 +22,9 @@ gem 'httparty'
 gem 'bourbon'
 gem 'neat'
 
+
+gem 'runtimeerror_notifier'
+
 group :development, :test do
   gem 'dotenv-rails'
 
