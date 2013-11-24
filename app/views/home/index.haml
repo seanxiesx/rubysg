@@ -20,7 +20,7 @@
         .name{"data-test" => "historic-event-name"}
           = event.name
         .time
-          = event.time.strftime("%d %b %Y - %I:%M%P")
+          = event.time.strftime("%-e %b %Y - %-l:%M%P")
         .venue
           = event.venue_name
         .details
