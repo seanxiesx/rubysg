@@ -13,11 +13,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 23 Nov 2013 10:06:05 GMT
+      - Sun, 24 Nov 2013 07:03:59 GMT
       Server:
       - Apache-Coyote/1.1
       X-Meetup-Server:
-      - api10.int.meetup.com
+      - api1.int.meetup.com
       X-Oauth-Scopes:
       - basic
       X-Accepted-Oauth-Scopes:
@@ -25,15 +25,86 @@ http_interactions:
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
-      - '895'
+      - '3237'
       Vary:
       - Accept-Encoding,User-Agent
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: |
-        {"results":[],"meta":{"lon":"","count":0,"signed_url":"http:\/\/api.meetup.com\/2\/events?group_id=3952812&status=upcoming&order=time&limited_events=False&desc=desc&offset=0&format=json&page=5&fields=event_hosts&sig_id=5018710&sig=110ff701062795cca58696c4bd7a54d928322dc9","link":"http:\/\/api.meetup.com\/2\/events","next":"","total_count":0,"url":"http:\/\/api.meetup.com\/2\/events?group_id=3952812&key=497d436863212d45671f791084e7062&status=upcoming&order=time&limited_events=False&desc=desc&offset=0&format=json&page=5&fields=event_hosts&sign=True","id":"","title":"Meetup Events v2","updated":1385201165843,"description":"Access Meetup events using a group, member, or event id. Events in private groups are available only to authenticated members of those groups. To search events by topic or location, see [Open Events](\/meetup_api\/docs\/2\/open_events).","method":"Events","lat":""}}
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXN1bHRzIjpbeyJzdGF0dXMiOiJ1cGNvbWluZyIsInZpc2liaWxpdHki
+        OiJwdWJsaWMiLCJtYXliZV9yc3ZwX2NvdW50IjowLCJldmVudF9ob3N0cyI6
+        W3sibWVtYmVyX25hbWUiOiJXaW5zdG9uIFRlbyIsIm1lbWJlcl9pZCI6NTAx
+        ODcxMH1dLCJpZCI6IjE1MjQ2MDAxMiIsInV0Y19vZmZzZXQiOjI4ODAwMDAw
+        LCJ0aW1lIjoxMzg3Mjc4MDAwMDAwLCJ3YWl0bGlzdF9jb3VudCI6MCwiYW5u
+        b3VuY2VkIjp0cnVlLCJ1cGRhdGVkIjoxMzg1Mjc2NjAwMDAwLCJ5ZXNfcnN2
+        cF9jb3VudCI6MSwiY3JlYXRlZCI6MTM4NTI3NjYwMDAwMCwiZXZlbnRfdXJs
+        IjoiaHR0cDpcL1wvd3d3Lm1lZXR1cC5jb21cL1NpbmdhcG9yZS1SdWJ5LUdy
+        b3VwXC9ldmVudHNcLzE1MjQ2MDAxMlwvIiwiZGVzY3JpcHRpb24iOiI8cD5O
+        ZXh0IFJ1YnlTRyBtZWV0dXAgaXMgb24gMTcgRGVjZW1iZXIsIFR1ZXNkYXkg
+        N3BtLCA8YnIgXC8+XG5cbiBhbmQgaXQnbGwgYmUgYXTCoDxiPlBsdWdpbkBC
+        bGs3MTxcL2I+IChUbyBCZSBDb25maXJtZWQpLjxcL3A+XG48cD48c3Bhbj5K
+        b2luIHVzIGZvciB0aGUgbGFzdCBSdWJ5IG1lZXR1cCBvZiAyMDEzITxcL3Nw
+        YW4+PFwvcD5cbjxwPjxzcGFuPi0tLS0tLS0tLS3CoDxcL3NwYW4+PFwvcD5c
+        bjxwPldlJ2xsIHBvc3NpYmx5IGhhdmUgc3BlYWtlcnMgZnJvbSBFbmdpbmVZ
+        YXJkIGFuZCBHaXRIdWIhIDxiciBcLz5cblxuPHNwYW4+U3RheSB0dW5lIGZv
+        ciBtb3JlIGRldGFpbHMuPFwvc3Bhbj48XC9wPlxuPHA+PHNwYW4+V2hvIHdv
+        dWxkIGxpa2UgdG8gZG8gXCI1IFJhbmRvbSBSdWJ5IFRpcHNcIiBmb3IgRGVj
+        ZW1iZXI/PFwvc3Bhbj48XC9wPlxuPHA+PHNwYW4+LS0tLS0tLS0tLcKgIDxi
+        ciBcLz5cblxuPFwvc3Bhbj48XC9wPlxuPHA+V291bGQgeW91IGxpa2UgdG8g
+        c3BlYWsgYXQgb3VyIGZ1dHVyZSBtZWV0dXBzPzxcL3A+XG48cD5Zb3UgY291
+        bGQgc2hhcmUgYWJvdXQgeW91ciBzdGFydHVwIHRlY2hub2xvZ3kgc3RhY2ss
+        IDxiciBcLz5cblxuIHlvdXIgbmV3IFJ1YnlHZW0sIG9yIHlvdXIgb3Bpbmlv
+        bnMgb24gYmVzdCBwcmFjdGljZXMsIDxiciBcLz5cblxuIHNvIHRoYXQgcGVv
+        cGxlIGNhbiBnZXQgdG8ga25vdyBob3cgYXdlc29tZSB5b3UgYXJlITxcL3A+
+        XG48cD5XZSBhbHNvIGhhdmUgYSA1bWluIHNlY3Rpb24gb24gXCI1IFJhbmRv
+        bSBSdWJ5IFRpcHNcIiA8YnIgXC8+XG5cbiB0aGF0IHlvdSBjYW4gdm9sdW50
+        ZWVyIGZvciAtIEkgYW0gc3VyZSB5b3UgbXVzdCBoYXZlwqAgPGJyIFwvPlxu
+        XG4gY2FtZSBhY3Jvc3Mgc29tZSBpbnRlcmVzdGluZyBSdWJ5IG51Z2dldHMg
+        aW4gdGhlwqAgPGJyIFwvPlxuXG4gbGFzdCBtb250aCByaWdodD88XC9wPlxu
+        PHA+U28gZG9uJ3QgYmUgc2h5IcKgPHNwYW4+U3RlcCBmb3J3YXJkwqBhbmQg
+        c2hhcmUgeW91ciBrbm93bGVkZ2UhPFwvc3Bhbj48XC9wPlxuPHA+PHNwYW4+
+        UGluZyBtZSAtIEB3aW5zdG9ueXcgb3Igd2luc3Rvbnl3QGdtYWlsLmNvbS48
+        XC9zcGFuPjxcL3A+XG48cD48c3Bhbj5TZWUgeW91IGFsbCBzb29uITxcL3Nw
+        YW4+IDxzcGFuPiA8YnIgXC8+XG5cbjxcL3NwYW4+PFwvcD5cbjxwPjxzcGFu
+        PiA8YnIgXC8+XG5cbjxcL3NwYW4+PFwvcD5cbjxwPi0tLS0tLS0tLS0gPGJy
+        IFwvPlxuXG4gSm9iIFBvc3RpbmdzIDxiciBcLz5cblxuIC0tLS0tLS0tLS0g
+        PGJyIFwvPlxuXG48XC9wPlxuPHA+QXJlIHlvdSBsb29raW5nIGZvciBSdWJ5
+        aXN0cz8gRG8geW91IGhhdmUgYSBqb2IgcG9zdGluZz8gPGJyIFwvPlxuXG4g
+        RW1haWwgbWUgYSBibHVyYiAoJmx0OyA1MCB3b3JkcykgKyBsaW5rIGFuZCBJ
+        J2xsIHB1dCBpdMKgaGVyZS7CoDxcL3A+XG48cD48c3Bhbj4tLS0tLS0tLS0t
+        PFwvc3Bhbj4gPGJyIFwvPlxuXG48XC9wPlxuPHA+IDxiciBcLz5cblxuPFwv
+        cD5cbjxwPjxiPlRoYW5rIFlvdSwgU3BvbnNvcnM6PFwvYj7CoDxcL3A+XG48
+        cD48aT5Gb29kOjxcL2k+PFwvcD5cbjxwPjxpbWcgc3JjPVwiaHR0cDpcL1wv
+        cGhvdG9zMS5tZWV0dXBzdGF0aWMuY29tXC9waG90b3NcL2V2ZW50XC8yXC8w
+        XC84XC8yXC82MDBfMjk1MjA4MzIyLmpwZWdcIiBzdHlsZT1cIm1heC1oZWln
+        aHQgOiA3MDBweCA7IG1heC13aWR0aCA6IDcwMHB4IDsgbWFyZ2luIDogNXB4
+        XCI+PFwvaW1nPjxcL3A+IiwibmFtZSI6IkRlY2VtYmVyIE1lZXR1cCIsImhl
+        YWRjb3VudCI6MCwiZ3JvdXAiOnsiaWQiOjM5NTI4MTIsImdyb3VwX2xhdCI6
+        MS4yOTk5OTk5NTIzMTYyODQyLCJuYW1lIjoiU2luZ2Fwb3JlIFJ1YnkgR3Jv
+        dXAiLCJncm91cF9sb24iOjEwMy44NDk5OTg0NzQxMjExLCJqb2luX21vZGUi
+        OiJvcGVuIiwidXJsbmFtZSI6IlNpbmdhcG9yZS1SdWJ5LUdyb3VwIiwid2hv
+        IjoiUnVieWlzdHMifX1dLCJtZXRhIjp7ImxvbiI6IiIsImNvdW50IjoxLCJz
+        aWduZWRfdXJsIjoiaHR0cDpcL1wvYXBpLm1lZXR1cC5jb21cLzJcL2V2ZW50
+        cz9ncm91cF9pZD0zOTUyODEyJnN0YXR1cz11cGNvbWluZyZvcmRlcj10aW1l
+        JmxpbWl0ZWRfZXZlbnRzPUZhbHNlJmRlc2M9ZGVzYyZvZmZzZXQ9MCZmb3Jt
+        YXQ9anNvbiZwYWdlPTUmZmllbGRzPWV2ZW50X2hvc3RzJnNpZ19pZD01MDE4
+        NzEwJnNpZz0xMTBmZjcwMTA2Mjc5NWNjYTU4Njk2YzRiZDdhNTRkOTI4MzIy
+        ZGM5IiwibGluayI6Imh0dHA6XC9cL2FwaS5tZWV0dXAuY29tXC8yXC9ldmVu
+        dHMiLCJuZXh0IjoiIiwidG90YWxfY291bnQiOjEsInVybCI6Imh0dHA6XC9c
+        L2FwaS5tZWV0dXAuY29tXC8yXC9ldmVudHM/Z3JvdXBfaWQ9Mzk1MjgxMiZr
+        ZXk9NDk3ZDQzNjg2MzIxMmQ0NTY3MWY3OTEwODRlNzA2MiZzdGF0dXM9dXBj
+        b21pbmcmb3JkZXI9dGltZSZsaW1pdGVkX2V2ZW50cz1GYWxzZSZkZXNjPWRl
+        c2Mmb2Zmc2V0PTAmZm9ybWF0PWpzb24mcGFnZT01JmZpZWxkcz1ldmVudF9o
+        b3N0cyZzaWduPVRydWUiLCJpZCI6IiIsInRpdGxlIjoiTWVldHVwIEV2ZW50
+        cyB2MiIsInVwZGF0ZWQiOjEzODUyNzY2MDAwMDAsImRlc2NyaXB0aW9uIjoi
+        QWNjZXNzIE1lZXR1cCBldmVudHMgdXNpbmcgYSBncm91cCwgbWVtYmVyLCBv
+        ciBldmVudCBpZC4gRXZlbnRzIGluIHByaXZhdGUgZ3JvdXBzIGFyZSBhdmFp
+        bGFibGUgb25seSB0byBhdXRoZW50aWNhdGVkIG1lbWJlcnMgb2YgdGhvc2Ug
+        Z3JvdXBzLiBUbyBzZWFyY2ggZXZlbnRzIGJ5IHRvcGljIG9yIGxvY2F0aW9u
+        LCBzZWUgW09wZW4gRXZlbnRzXShcL21lZXR1cF9hcGlcL2RvY3NcLzJcL29w
+        ZW5fZXZlbnRzKS4iLCJtZXRob2QiOiJFdmVudHMiLCJsYXQiOiIifX0K
     http_version: 
-  recorded_at: Sat, 23 Nov 2013 10:06:06 GMT
+  recorded_at: Sun, 24 Nov 2013 07:03:59 GMT
 recorded_with: VCR 2.7.0
