@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Heroku specific
 # https://devcenter.heroku.com/articles/rails4-getting-started
 gem 'rails_12factor', group: :production
-gem 'unicorn'
+gem 'puma'
 gem 'foreman'
 
 gem 'rails', '4.0.1'

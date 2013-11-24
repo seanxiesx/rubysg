@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Rubysg::Application.config.secret_key_base = '795dea0d72fb4032a0c4c6bd72bf38b992b33871077610fbf03b305f253fc678e8d42f1c152b7b63660aaf667ec071913fb53db00d143b3a0df6892aba1a4681'
+Rubysg::Application.config.secret_key_base = ENV["APP_SECRET_KEY"]
