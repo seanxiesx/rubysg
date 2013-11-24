@@ -1,5 +1,7 @@
 # ruby.sg
 
+[![Code Climate](https://codeclimate.com/github/rubysg/rubysg.png)](https://codeclimate.com/github/rubysg/rubysg)
+
 This is the app for [ruby.sg](http://ruby.sg) - a community site for the Singapore Ruby Community!
 
 ## Contributing to ruby.sg
