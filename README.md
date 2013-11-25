@@ -6,13 +6,13 @@ This is the app for [ruby.sg](http://ruby.sg) - a community site for the Singapo
 
 ## Contributing to ruby.sg
 
-ruby.sh needs your help and we would love to see contributions from anyone in the community.
+ruby.sg needs your help and we would love to see contributions from anyone in the community.
 
 Please refer to the [PivotalTracker project](https://www.pivotaltracker.com/s/projects/948924) for details on features/bugs/chores that you can help with.
 
 Alternatively, you can also raise feature requests, or bug reports on GitHub Issues.
 
-The initial design of ruby.sh was contributed by [Tinkerbox Studios](http://www.tinkerbox.com.sg/). Mockups are available at `_design`.
+The initial design of ruby.sg was contributed by [Tinkerbox Studios](http://www.tinkerbox.com.sg/). Mockups are available at `_design`.
 
 ## Setup of Development Environment
 
