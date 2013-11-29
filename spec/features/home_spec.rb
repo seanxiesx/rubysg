@@ -10,13 +10,13 @@ feature "RubySG Home Page" do
     page.should have_selector("[data-test=upcoming-event]", count: 2)
     upcoming_events.each do |event|
       page.should have_selector("[data-test=upcoming-event-name]", text: event.name)
-      page.should have_selector(".events.upcoming .rsvp a[href='#{event.event_url}']", text: "RSVP")
+      page.should have_selector("[data-test=upcoming-event-rsvp-link][href='#{event.event_url}']", text: "RSVP")
     end
 
     page.should have_selector("[data-test=historic-event]", count: 2)
     historic_events.each do |event|
       page.should have_selector("[data-test=historic-event-name]", text: event.name)
-      page.should have_selector(".events.historic .details a[href='#{event.event_url}']", text: "Details & Slides")
+      page.should have_selector("[data-test=historic-event-details-link][href='#{event.event_url}']", text: "Details & Slides")
     end
   end
 end

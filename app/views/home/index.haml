@@ -11,7 +11,7 @@
             .venue_name= event.venue_name
             .venue_address= event.venue_address
           .rsvp
-            = link_to "RSVP", event.event_url
+            = link_to "RSVP", event.event_url, "data-test" => "upcoming-event-rsvp-link"
 
 .events.historic
   .container
@@ -24,7 +24,7 @@
         .venue
           = event.venue_name
         .details
-          = link_to "Details & Slides", event.event_url
+          = link_to "Details & Slides", event.event_url, "data-test" => "historic-event-details-link"
 
 .introduction
   .container
