@@ -8,6 +8,7 @@ describe Meetup do
       expect(events).to have_at_least(1).item
       events.each do |event|
         expect(event["status"]).to eq "upcoming"
+        expect(event["event_url"]).to match(/http.*\.meetup\.com/)
       end
     end
   end
@@ -19,6 +20,7 @@ describe Meetup do
       expect(events).to have_at_least(1).item
       events.each do |event|
         expect(event["status"]).to eq "past"
+        expect(event["event_url"]).to match(/http.*\.meetup\.com/)
       end
     end
   end
