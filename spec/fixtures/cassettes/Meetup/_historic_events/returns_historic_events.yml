@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.meetup.com/2/events?desc=desc&fields=event_hosts&group_id=3952812&key=497d436863212d45671f791084e7062&page=5&sign=true&status=past
+    uri: http://api.meetup.com/2/events?desc=desc&fields=event_hosts&group_id=3952812&key=<API_KEY>&page=5&sign=true&status=past
     body:
       encoding: US-ASCII
       string: ''
@@ -13,11 +13,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 23 Nov 2013 10:06:05 GMT
+      - Fri, 29 Nov 2013 04:19:35 GMT
       Server:
       - Apache-Coyote/1.1
       X-Meetup-Server:
-      - api0.int.meetup.com
+      - api2.int.meetup.com
       X-Oauth-Scopes:
       - basic
       X-Accepted-Oauth-Scopes:
@@ -416,23 +416,22 @@ http_interactions:
         c2lnPWMwYTY2OWI4ZTY4NjkzOTk4YzgyOWYzMjQ5ODE1Y2U5OGU4NWQyYTYi
         LCJsaW5rIjoiaHR0cDpcL1wvYXBpLm1lZXR1cC5jb21cLzJcL2V2ZW50cyIs
         Im5leHQiOiJodHRwOlwvXC9hcGkubWVldHVwLmNvbVwvMlwvZXZlbnRzP2dy
-        b3VwX2lkPTM5NTI4MTIma2V5PTQ5N2Q0MzY4NjMyMTJkNDU2NzFmNzkxMDg0
-        ZTcwNjImc3RhdHVzPXBhc3Qmb3JkZXI9dGltZSZsaW1pdGVkX2V2ZW50cz1G
-        YWxzZSZkZXNjPWRlc2Mmb2Zmc2V0PTEmZm9ybWF0PWpzb24mcGFnZT01JmZp
-        ZWxkcz1ldmVudF9ob3N0cyZzaWduPVRydWUiLCJ0b3RhbF9jb3VudCI6MjEs
-        InVybCI6Imh0dHA6XC9cL2FwaS5tZWV0dXAuY29tXC8yXC9ldmVudHM/Z3Jv
-        dXBfaWQ9Mzk1MjgxMiZrZXk9NDk3ZDQzNjg2MzIxMmQ0NTY3MWY3OTEwODRl
-        NzA2MiZzdGF0dXM9cGFzdCZvcmRlcj10aW1lJmxpbWl0ZWRfZXZlbnRzPUZh
-        bHNlJmRlc2M9ZGVzYyZvZmZzZXQ9MCZmb3JtYXQ9anNvbiZwYWdlPTUmZmll
-        bGRzPWV2ZW50X2hvc3RzJnNpZ249VHJ1ZSIsImlkIjoiIiwidGl0bGUiOiJN
-        ZWV0dXAgRXZlbnRzIHYyIiwidXBkYXRlZCI6MTM4NTEyMzUyNDAwMCwiZGVz
-        Y3JpcHRpb24iOiJBY2Nlc3MgTWVldHVwIGV2ZW50cyB1c2luZyBhIGdyb3Vw
-        LCBtZW1iZXIsIG9yIGV2ZW50IGlkLiBFdmVudHMgaW4gcHJpdmF0ZSBncm91
-        cHMgYXJlIGF2YWlsYWJsZSBvbmx5IHRvIGF1dGhlbnRpY2F0ZWQgbWVtYmVy
-        cyBvZiB0aG9zZSBncm91cHMuIFRvIHNlYXJjaCBldmVudHMgYnkgdG9waWMg
-        b3IgbG9jYXRpb24sIHNlZSBbT3BlbiBFdmVudHNdKFwvbWVldHVwX2FwaVwv
-        ZG9jc1wvMlwvb3Blbl9ldmVudHMpLiIsIm1ldGhvZCI6IkV2ZW50cyIsImxh
-        dCI6IiJ9fQo=
+        b3VwX2lkPTM5NTI4MTIma2V5PTxBUElfS0VZPiZzdGF0dXM9cGFzdCZvcmRl
+        cj10aW1lJmxpbWl0ZWRfZXZlbnRzPUZhbHNlJmRlc2M9ZGVzYyZvZmZzZXQ9
+        MSZmb3JtYXQ9anNvbiZwYWdlPTUmZmllbGRzPWV2ZW50X2hvc3RzJnNpZ249
+        VHJ1ZSIsInRvdGFsX2NvdW50IjoyMSwidXJsIjoiaHR0cDpcL1wvYXBpLm1l
+        ZXR1cC5jb21cLzJcL2V2ZW50cz9ncm91cF9pZD0zOTUyODEyJmtleT08QVBJ
+        X0tFWT4mc3RhdHVzPXBhc3Qmb3JkZXI9dGltZSZsaW1pdGVkX2V2ZW50cz1G
+        YWxzZSZkZXNjPWRlc2Mmb2Zmc2V0PTAmZm9ybWF0PWpzb24mcGFnZT01JmZp
+        ZWxkcz1ldmVudF9ob3N0cyZzaWduPVRydWUiLCJpZCI6IiIsInRpdGxlIjoi
+        TWVldHVwIEV2ZW50cyB2MiIsInVwZGF0ZWQiOjEzODUxMjM1MjQwMDAsImRl
+        c2NyaXB0aW9uIjoiQWNjZXNzIE1lZXR1cCBldmVudHMgdXNpbmcgYSBncm91
+        cCwgbWVtYmVyLCBvciBldmVudCBpZC4gRXZlbnRzIGluIHByaXZhdGUgZ3Jv
+        dXBzIGFyZSBhdmFpbGFibGUgb25seSB0byBhdXRoZW50aWNhdGVkIG1lbWJl
+        cnMgb2YgdGhvc2UgZ3JvdXBzLiBUbyBzZWFyY2ggZXZlbnRzIGJ5IHRvcGlj
+        IG9yIGxvY2F0aW9uLCBzZWUgW09wZW4gRXZlbnRzXShcL21lZXR1cF9hcGlc
+        L2RvY3NcLzJcL29wZW5fZXZlbnRzKS4iLCJtZXRob2QiOiJFdmVudHMiLCJs
+        YXQiOiIifX0K
     http_version: 
-  recorded_at: Sat, 23 Nov 2013 10:06:07 GMT
+  recorded_at: Fri, 29 Nov 2013 04:19:36 GMT
 recorded_with: VCR 2.7.0

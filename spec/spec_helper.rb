@@ -52,4 +52,5 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/cassettes'
   c.hook_into :webmock
   c.configure_rspec_metadata!
+  c.filter_sensitive_data('<API_KEY>') { (ENV['MEETUP_API_KEY'] || 'fakemeetupkey') }
 end
