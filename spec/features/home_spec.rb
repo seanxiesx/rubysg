@@ -7,16 +7,16 @@ feature "RubySG Home Page" do
   scenario "user can see events" do
     visit root_path
 
-    page.should have_selector("[data-test=upcoming-event]", count: 2)
+    expect(page).to have_selector("[data-test=upcoming-event]", count: 2)
     upcoming_events.each do |event|
-      page.should have_selector("[data-test=upcoming-event-name]", text: event.name)
-      page.should have_selector("[data-test=upcoming-event-rsvp-link][href='#{event.event_url}']", text: "RSVP")
+      expect(page).to have_selector("[data-test=upcoming-event-name]", text: event.name)
+      expect(page).to have_selector("[data-test=upcoming-event-rsvp-link][href='#{event.event_url}']", text: "RSVP")
     end
 
-    page.should have_selector("[data-test=historic-event]", count: 2)
+    expect(page).to have_selector("[data-test=historic-event]", count: 2)
     historic_events.each do |event|
-      page.should have_selector("[data-test=historic-event-name]", text: event.name)
-      page.should have_selector("[data-test=historic-event-details-link][href='#{event.event_url}']", text: "Details & Slides")
+      expect(page).to have_selector("[data-test=historic-event-name]", text: event.name)
+      expect(page).to have_selector("[data-test=historic-event-details-link][href='#{event.event_url}']", text: "Details & Slides")
     end
   end
 end
