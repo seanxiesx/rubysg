@@ -5,29 +5,11 @@
 .events.event-list
   .container
     - @upcoming_events.each do |event|
-      .event{"data-test" => "upcoming-event"}
-        .name{"data-test" => "upcoming-event-name"}
-          = event.name
-        .time
-          = event.time.strftime("%B %e - %-l:%M%P")
-        .venue
-          = event.venue_name
-        .details
-          = link_to "RSVP", event.event_url, "data-test" => "upcoming-event-rsvp-link"
-
+      = render :partial => "shared/event_item", locals: {event: event, event_type: 'upcoming', link_name: "RSVP"}
 
 .container
   %h2= "Past event(s)"
 .events.event-list
   .container
     - @historic_events.each do |event|
-      .event{"data-test" => "historic-event"}
-        .name{"data-test" => "historic-event-name"}
-          = event.name
-        .time
-          = event.time.strftime("%-e %b %Y - %-l:%M%P")
-        .venue
-          = event.venue_name
-        .details
-          = link_to "Details & Slides", event.event_url, "data-test" => "historic-event-details-link"
-
+      = render :partial => "shared/event_item", locals: {event: event, event_type: 'historic', link_name: "Details & Slides"}
