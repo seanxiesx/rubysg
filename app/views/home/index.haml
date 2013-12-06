@@ -13,7 +13,7 @@
           .rsvp
             = link_to "RSVP", event.event_url, "data-test" => "upcoming-event-rsvp-link"
 
-.events.historic
+.events.event-list
   .container
     - @historic_events.each do |event|
       .event{"data-test" => "historic-event"}
