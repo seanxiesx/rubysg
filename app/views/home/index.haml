@@ -1,15 +1,18 @@
 .events.upcoming
   .container
     - @upcoming_events.each do |event|
-      .event{"data-test" => "upcoming-event"}
-        .name{"data-test" => "upcoming-event-name"}
+      .event{"data-test" => "upcoming-event", "itemscope" => "", "itemtype" => "http://data-vocabulary.org/Event"}
+        .name{"data-test" => "upcoming-event-name", "itemprop" => "summary"}
           = event.name
         .details
-          .time
+          %time.time{"itemprop" => "startDate", "datetime" => event.time.utc.iso8601}
             = event.time.strftime("%B %e - %-l:%M%P")
-          .venue
-            .venue_name= event.venue_name
-            .venue_address= event.venue_address
+          .venue{"itemprop" => "location", "itemscope" => "", "itemtype" => "http://data-vocabulary.org/Organization"}
+            .venue_name{"itemprop" => "name"}
+              = event.venue_name
+            .venue_address{"itemprop" => "address", "itemscope" => "", "itemtype" => "http://data-vocabulary.org/Address"}
+              %span{"itemprop" => "street-address"}
+                = event.venue_address
           .rsvp
             = link_to "RSVP", event.event_url, "data-test" => "upcoming-event-rsvp-link"
 
