@@ -13,10 +13,7 @@
           .rsvp
             = link_to "RSVP", event.event_url, "data-test" => "upcoming-event-link"
 
-.events.event-list
-  .container
-    - @historic_events.each do |event|
-      = render :partial => "shared/event_item", locals: {event: event, event_type: 'historic', link_name: "Details & Slides"}
+= render :partial => "shared/event_list", locals: {events: @historic_events, event_type: 'historic', link_name: "Details & Slides"}
 
 .introduction
   .container

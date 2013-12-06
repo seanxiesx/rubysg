@@ -1,0 +1,12 @@
+.events.event-list
+  .container
+    - events.each do |event|
+      .event{"data-test" => "#{event_type}-event"}
+        .name{"data-test" => "#{event_type}-event-name"}
+          = event.name
+        .time
+          = event.time.strftime("%-e %b %Y - %-l:%M%P")
+        .venue
+          = event.venue_name
+        .details
+          = link_to link_name, event.event_url, "data-test" => "#{event_type}-event-link"
