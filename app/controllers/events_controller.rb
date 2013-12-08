@@ -7,6 +7,11 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
+    @rsvp = 'RSVP'
+    if @event.time < Time.now
+      @rsvp = 'Details & Slides'
+    end
+
   end
 
 end

@@ -3,6 +3,8 @@
     %h1.event-hero-name= @event.name
     %time.time
       = @event.time.strftime("%B %e - %-l:%M%P")
+    .btn-rsvp
+      = link_to @rsvp, @event.event_url, "data-test" => "upcoming-event-link"
     = raw(@event.description)
   .event-meta
     .venue
