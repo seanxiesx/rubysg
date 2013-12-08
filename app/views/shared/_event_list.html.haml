@@ -9,4 +9,4 @@
         .venue
           = event.venue_name
         .details
-          = link_to link_name, event.event_url, "data-test" => "#{event_type}-event-link"
+          = link_to link_name, event_path(event.id), "data-test" => "#{event_type}-event-link"

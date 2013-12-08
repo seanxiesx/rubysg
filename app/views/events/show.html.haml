@@ -1,6 +1,13 @@
-%p#notice= notice
+.container
+  .event-detail
+    %h1.event-hero-name= @event.name
+    %time.time
+      = @event.time.strftime("%B %e - %-l:%M%P")
+    = raw(@event.description)
+  .event-meta
+    .venue
+      %h2.event-subheading= "Venue"
+      .venue_name= @event.venue_name
+      .venue_address= @event.venue_address
+      = image_tag("http://maps.googleapis.com/maps/api/staticmap?" + {center: @event.latlon, markers: @event.latlon, zoom: 16, size: "250x300", sensor: false}.to_query, alt: @event.venue_name)
 
-
-= link_to 'Edit', edit_event_path(@event)
-\|
-= link_to 'Back', events_path

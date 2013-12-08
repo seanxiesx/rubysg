@@ -1,4 +1,4 @@
 Rubysg::Application.routes.draw do
   root "home#index"
-  resources :events
+  resources :events, only: [:index, :show]
 end

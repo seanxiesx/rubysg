@@ -1,4 +1,9 @@
 class Event < ActiveRecord::Base
+
+  def latlon
+      [self.venue_lat, self.venue_lon].join(' ')
+  end
+
   class << self
     def import_meetup_events(type)
       meetups = Meetup.send("#{type}_events")

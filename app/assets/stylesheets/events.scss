@@ -81,3 +81,27 @@
     text-align: right;
   }
 }
+
+.event-hero-name {
+  font-size: 3.5em;
+  font-weight: 400;
+  text-shadow: 2px 2px 2px #fda1ab;
+  font-family: "Droid Sans";
+}
+
+.event-detail, .event-meta {
+  float: left;
+  margin-top: 79px;
+  .event-subheading {
+    font-style: italic;
+  }
+}
+
+.event-detail {
+  width: 45em;
+}
+
+.event-meta {
+  width: 23em;
+}
+
