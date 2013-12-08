@@ -1,15 +1,20 @@
-.container
+.container{"itemscope" => "", "itemtype" => "http://data-vocabulary.org/Event"}
   .event-detail
-    %h1.event-hero-name= @event.name
-    %time.time
+    %h1.event-hero-name{"itemprop" => "summary"}
+      = @event.name
+    %time.time{"itemprop" => "startDate", "datetime" => @event.time.utc.iso8601}
       = @event.time.strftime("%B %e - %-l:%M%P")
     .btn-rsvp
       = link_to @rsvp, @event.event_url, "data-test" => "upcoming-event-link"
     = raw(@event.description)
   .event-meta
-    .venue
+    .venue{"itemprop" => "location", "itemscope" => "", "itemtype" => "http://data-vocabulary.org/Organization"}
       %h2.event-subheading= "Venue"
-      .venue_name= @event.venue_name
-      .venue_address= @event.venue_address
+      .venue_name{"itemprop" => "name"}
+        = @event.venue_name
+      .venue_address{"itemprop" => "street-address"}
+        = @event.venue_address
       = image_tag("http://maps.googleapis.com/maps/api/staticmap?" + {center: @event.latlon, markers: @event.latlon, zoom: 16, size: "250x300", sensor: false}.to_query, alt: @event.venue_name)
-
+      %span{"itemprop" => "geo", "itemscope" => "", "itemtype" => "http://data-vocabulary.org/Geo"}
+        %meta{"itemprop" => "latitude", "content" => @event.venue_lat}
+        %meta{"itemprop" => "longitude", "content" => @event.venue_lon}
