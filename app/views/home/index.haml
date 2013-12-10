@@ -16,7 +16,9 @@
           .btn-rsvp
             = link_to "RSVP", event.event_url, "data-test" => "upcoming-event-link"
 
-= render :partial => "shared/event_list", locals: {events: @historic_events, event_type: 'historic', link_name: "Details & Slides"}
+.events.event-list
+  .container
+    = render @historic_events
 
 .introduction
   .container
