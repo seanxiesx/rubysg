@@ -40,17 +40,6 @@
   }
 }
 
-.btn-rsvp {
-  @include button(simple, #61c5c2);
-  text-align: center;
-
-  a {
-    color: white;
-    font-size: 1.5em;
-    font-weight: 200;
-  }
-}
-
 .events.event-list {
   .event {
     border-bottom: 1px dashed $background-red;
@@ -105,3 +94,14 @@
   width: 23em;
 }
 
+.btn-rsvp {
+  @include button(simple, #61c5c2);
+
+  text-align: center;
+
+  a {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 200;
+  }
+}
