@@ -38,20 +38,20 @@
       font-weight: 200;
     }
   }
+}
 
-  .rsvp {
-    @include button(simple, #61c5c2);
-    text-align: center;
+.btn-rsvp {
+  @include button(simple, #61c5c2);
+  text-align: center;
 
-    a {
-      color: white;
-      font-size: 1.5em;
-      font-weight: 200;
-    }
+  a {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 200;
   }
 }
 
-.events.historic {
+.events.event-list {
   .event {
     border-bottom: 1px dashed $background-red;
 
@@ -81,3 +81,27 @@
     text-align: right;
   }
 }
+
+.event-hero-name {
+  font-size: 3.5em;
+  font-weight: 400;
+  text-shadow: 2px 2px 2px #fda1ab;
+  font-family: "Droid Sans";
+}
+
+.event-detail, .event-meta {
+  float: left;
+  margin-top: 79px;
+  .event-subheading {
+    font-style: italic;
+  }
+}
+
+.event-detail {
+  width: 45em;
+}
+
+.event-meta {
+  width: 23em;
+}
+

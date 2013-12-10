@@ -13,21 +13,12 @@
             .venue_address{"itemprop" => "address", "itemscope" => "", "itemtype" => "http://data-vocabulary.org/Address"}
               %span{"itemprop" => "street-address"}
                 = event.venue_address
-          .rsvp
-            = link_to "RSVP", event.event_url, "data-test" => "upcoming-event-rsvp-link"
+          .btn-rsvp
+            = link_to "RSVP", event.event_url, "data-test" => "upcoming-event-link"
 
-.events.historic
+.events.event-list
   .container
-    - @historic_events.each do |event|
-      .event{"data-test" => "historic-event"}
-        .name{"data-test" => "historic-event-name"}
-          = event.name
-        .time
-          = event.time.strftime("%-e %b %Y - %-l:%M%P")
-        .venue
-          = event.venue_name
-        .details
-          = link_to "Details & Slides", event.event_url, "data-test" => "historic-event-details-link"
+    = render @historic_events
 
 .introduction
   .container

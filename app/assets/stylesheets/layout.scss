@@ -31,14 +31,14 @@
       @include span-columns(4 of 12);
     }
 
-    .rsvp {
+    .btn-rsvp {
       @include span-columns(2 of 4);
       @include shift(1);
     }
   }
 }
 
-.events.historic {
+.events.event-list {
   margin: 2em 0;
 
   .event {
