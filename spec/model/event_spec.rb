@@ -1,6 +1,22 @@
 require "spec_helper"
 
 describe Event do
+  context "scopes" do
+    describe ".upcoming" do
+      let!(:historic_events) { create_list(:event, 2, time: 1.week.ago) }
+      let!(:upcoming_events) { create_list(:event, 2, time: 1.week.from_now) }
+
+      it { expect(Event.upcoming).to match_array upcoming_events }
+    end
+
+    describe ".historic" do
+      let!(:historic_events) { create_list(:event, 2, time: 1.week.ago) }
+      let!(:upcoming_events) { create_list(:event, 2, time: 1.week.from_now) }
+
+      it { expect(Event.historic).to match_array historic_events }
+    end
+  end
+
   describe ".import_meetup_events" do
     let(:status) { :past_present_future }
 

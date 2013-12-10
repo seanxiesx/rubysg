@@ -1,5 +1,8 @@
 class Event < ActiveRecord::Base
 
+  scope :upcoming, -> { where("time >= ?", Time.now) }
+  scope :historic, -> { where("time < ?", Time.now) }
+
   def latlon
       [self.venue_lat, self.venue_lon].join(' ')
   end
