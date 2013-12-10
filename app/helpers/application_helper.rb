@@ -1,11 +1,5 @@
 module ApplicationHelper
-
-  def event_link_name type
-    output = 'Details & Slides'
-    if type == 'upcoming'
-      output = 'RSVP'
-    end
-
-    output
+  def event_link_name(event)
+    event.time >= Time.now ? 'RSVP' : 'Details & Slides'
   end
 end

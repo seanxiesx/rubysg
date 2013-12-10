@@ -1,9 +1,9 @@
-.event{"data-test" => "#{event.type}-event", "itemscope" => "", "itemtype" => "http://data-vocabulary.org/Event"}
-  .name{"data-test" => "#{event.type}-event-name", "itemprop" => "summary"}
+.event{"data-test" => "#{data_test_type}-event", "itemscope" => "", "itemtype" => "http://data-vocabulary.org/Event"}
+  .name{"data-test" => "#{data_test_type}-event-name", "itemprop" => "summary"}
     = event.name
   %time.time{"itemprop" => "startDate", "datetime" => event.time.utc.iso8601}
     = event.time.strftime("%-e %b %Y - %-l:%M%P")
   .venue{"itemprop" => "location", "itemscope" => "", "itemtype" => "http://data-vocabulary.org/Organization"}
     = event.venue_name
   .details
-    = link_to event_link_name(event.type), event_path(event.id), {"data-test" => "#{event.type}-event-link", "itemprop" => "url"}
+    = link_to event_link_name(event), event_path(event.id), {"data-test" => "#{data_test_type}-event-link", "itemprop" => "url"}

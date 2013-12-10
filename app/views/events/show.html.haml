@@ -5,7 +5,7 @@
     %time.time{"itemprop" => "startDate", "datetime" => @event.time.utc.iso8601}
       = @event.time.strftime("%B %e - %-l:%M%P")
     .btn-rsvp
-      = link_to @rsvp, @event.event_url, "data-test" => "event-link"
+      = link_to event_link_name(@event), @event.event_url, "data-test" => "event-link"
     = raw(@event.description)
   .event-meta
     .venue{"itemprop" => "location", "itemscope" => "", "itemtype" => "http://data-vocabulary.org/Organization"}

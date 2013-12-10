@@ -1,13 +1,14 @@
 .container
   %h1= "Event List"
+
 .container
   %h2= "Upcoming event(s)"
 .events.event-list
   .container
-    = render @upcoming_events
+    = render @upcoming_events, data_test_type: "upcoming"
 
 .container
   %h2= "Past event(s)"
 .events.event-list
   .container
-    = render @historic_events
+    = render @historic_events, data_test_type: "historic"

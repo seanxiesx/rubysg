@@ -4,16 +4,6 @@ class Event < ActiveRecord::Base
       [self.venue_lat, self.venue_lon].join(' ')
   end
 
-  def type
-    output = 'upcoming'
-
-    if self.time < Time.now
-      output = 'historic'
-    end
-
-    output
-  end
-
   class << self
     def import_meetup_events(type)
       meetups = Meetup.send("#{type}_events")
